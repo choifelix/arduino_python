@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 from Arduino import Arduino
 import time
-from sr04 import SR04
+from Components import SR04
 
 if __name__ == '__main__':
     
-    board = Arduino('9600', port="/dev/ttyACM0")
+    board = Arduino('9600', port="/dev/cu.usbmodem141201") #/dev/ttyACM0 for linux
     # if your arduino was running on a serial port other than '/dev/ttyACM0/'
     # declare: a = Arduino(serial_port='/dev/ttyXXXX')
 
